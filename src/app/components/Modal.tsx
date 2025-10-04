@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef, useState, useCallback } from 'react';
 import { createPortal } from 'react-dom';
 import { useRouter } from 'next/navigation';
 import FocusLock from 'react-focus-lock';
@@ -37,7 +37,7 @@ export const Modal = ({ children }: { children: React.ReactNode }) => {
       document.body.style.overflow = 'auto';
       document.removeEventListener('keydown', onKeyDown);
     };
-  }, []); // Зависимости не нужны, так как onDismiss самодостаточна
+  }, [onDismiss]); // Зависимости не нужны, так как onDismiss самодостаточна
 
   const modalContent = (
     <div
