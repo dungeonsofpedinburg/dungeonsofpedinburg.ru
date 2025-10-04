@@ -1,0 +1,234 @@
+@import "tailwindcss";
+
+@layer base {
+  html {
+    /* База для самых больших экранов (> 1200px) */
+    font-size: 62.5%; /* 1rem = 10px */
+    scrollbar-gutter: stable;
+  }
+
+  /* Подход "от большего к меньшему" (desktop-first для этой логики) */
+  @media (max-width: 1199px) { /* < 1200px (1199px - 1024px) */
+    html {
+      font-size: 56.25%; /* 1rem = 9px */
+    }
+  }
+  
+  @media (max-width: 1023px) { /* < 1024px (1023px - 621px) */
+    html {
+      font-size: 50%; /* 1rem = 8px */
+    }
+  }
+  
+  @media (max-width: 619px) { /* <= 620px */
+    html {
+      font-size: 43.75%; /* 1rem = 7px */
+    }
+  }
+
+  @media (max-width: 479px) {
+    html {
+      font-size: 50%; /* 1rem = 8px */
+    }
+  }
+
+  @media (max-width: 319px) {
+    html {
+      font-size: 43.75%; /* 1rem = 7px */
+    }
+  }
+
+  body {
+    font-family: var(--font-robotoflex), sans-serif;
+  }
+
+  :root {
+    --brand-purple: #D9298F;
+  }
+}
+
+@layer components {
+  /* --- Стили для заголовков --- */
+  .text-heading-1 {
+    @apply uppercase;
+    font-size: 6.4rem;
+    line-height: 95%;
+    letter-spacing: -0.0024em;
+    font-variation-settings: 'wdth' 25, 'wght' 600, 'opsz' 66;
+  }
+  .text-heading-2 {
+    @apply uppercase;
+    font-size: 3.6rem;
+    line-height: 105%;
+    letter-spacing: -0.0024em;
+    font-variation-settings: 'wdth' 25, 'wght' 600, 'opsz' 52;
+  }
+  .text-heading-3 {
+    @apply uppercase;
+    font-size: 2.8rem;
+    line-height: 105%;
+    letter-spacing: -0.0024em;
+    font-variation-settings: 'wdth' 25, 'wght' 600, 'opsz' 38;
+  }
+  .text-heading-4 {
+    @apply uppercase;
+    font-size: 2.4rem;
+    line-height: 105%;
+    letter-spacing: -0.0024em;
+    font-variation-settings: 'wdth' 25, 'wght' 600, 'opsz' 38;
+  }
+
+  /* --- Стили для основного текста --- */
+  .text-body-small {
+    font-size: 1.4rem;
+    line-height: 140%;
+    letter-spacing: -0.0024em;
+    margin-bottom: 1.2rem; /* Paragraph spacing */
+    font-variation-settings: 'wdth' 120, 'wght' 500, 'opsz' 14;
+  }
+  .text-body-medium {
+    font-size: 1.6rem;
+    line-height: 140%;
+    letter-spacing: -0.0024em;
+    margin-bottom: 1.2rem; /* Paragraph spacing */
+    font-variation-settings: 'wdth' 120, 'wght' 500, 'opsz' 16;
+  }
+  .text-body-large {
+    font-size: 1.8rem;
+    line-height: 140%;
+    letter-spacing: -0.0024em;
+    margin-bottom: 1.2rem; /* Paragraph spacing */
+    font-variation-settings: 'wdth' 120, 'wght' 500, 'opsz' 18;
+  }
+
+  /* --- Стили для меток (Labels) --- */
+  .text-label {
+    @apply uppercase;
+    font-size: 1.8rem;
+    line-height: 100%;
+    letter-spacing: -0.0024em;
+    font-variation-settings: 'wdth' 32, 'wght' 500, 'opsz' 18;
+  }
+  .text-label-bold {
+    @apply uppercase;
+    font-size: 1.8rem;
+    line-height: 100%;
+    letter-spacing: -0.0024em;
+    font-variation-settings: 'wdth' 25, 'wght' 900, 'opsz' 40;
+  }
+  .text-label-italics {
+    @apply uppercase;
+    font-size: 1.8rem;
+    line-height: 100%;
+    letter-spacing: -0.0024em;
+    font-variation-settings: 'slnt' -10, 'wdth' 32, 'wght' 300, 'opsz' 18;
+  }
+  
+  /* --- Стили для навигационных ссылок --- */
+  .text-nav-link {
+    @apply uppercase;
+    font-size: 2.2rem;
+    line-height: 140%;
+    letter-spacing: -0.0024em;
+    font-variation-settings: 'wdth' 32, 'wght' 500, 'opsz' 22;
+  }
+  .text-nav-link-bold {
+    @apply uppercase;
+    font-size: 2.2rem;
+    line-height: 140%;
+    letter-spacing: -0.0024em;
+    font-variation-settings: 'wdth' 25, 'wght' 900, 'opsz' 40;
+  }
+
+  .custom-scrollbar {
+    /* Для Firefox */
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255, 255, 255, 0.4) transparent;
+  }
+
+  /* Для Webkit-браузеров (Chrome, Safari, Edge) */
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 0.8rem;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 1rem;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(255, 255, 255, 0.6);
+  }
+
+  .card-grid {
+    @apply grid grid-cols-1; /* 1 колонка по умолчанию (> 0px) */
+
+    @media (min-width: 480px) {
+      @apply grid-cols-2; /* 2 колонки на экранах > 480px (от 480px до 1023px) */
+    }
+
+    @media (min-width: 1024px) {
+      @apply grid-cols-3; /* 3 колонки на экранах > 1024px */
+    }
+  }
+
+  header .text-nav-link {
+    font-size: 22px; /* Используем px, чтобы отвязаться от масштабирования html */
+  }
+
+  /* Для активного состояния NavLink */
+  header .text-nav-link-bold {
+    font-size: 22px; /* Аналогично, фиксируем размер в пикселях */
+  }
+
+ .site-logo {
+    @apply w-[12rem];
+  }
+  
+  header .site-logo {
+    @apply w-[120px]; /* Используем @apply с px. Это будет иметь высший приоритет! */
+  }
+
+  header .site-icon {
+    @apply w-[32px] h-[32px]; /* 3.2rem -> 32px */
+  }
+
+  .hide-scrollbar {
+    scrollbar-width: none;
+  }
+
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .modal-details-grid {
+    @apply grid grid-cols-2; /* База: 2 колонки (0px - 479px) */
+
+    @media (min-width: 480px) {
+      @apply grid-cols-3; /* > 480px: 3 колонки (480px - 767px) */
+    }
+
+    @media (min-width: 768px) {
+      @apply grid-cols-2; /* > 768px: Снова 2 колонки */
+    }
+  }
+
+  /* --- Анимации для модального окна --- */
+  @keyframes slide-in-right {
+    from { transform: translateX(100%); }
+    to { transform: translateX(0); }
+  }
+
+  @keyframes slide-out-right {
+    from { transform: translateX(0); }
+    to { transform: translateX(100%); }
+  }
+
+  .animate-slide-in-right {
+    animation: slide-in-right 0.175s ease-in-out;
+  }
+}
