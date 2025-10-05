@@ -75,7 +75,7 @@ export const AdventureModal = ({ adventure, master, details, lobbyUrl, lobbyButt
 
           {/* Блок с мастером */}
           <div className="flex items-center gap-4">
-            <Image src={master.avatarUrl} alt={master.name} width={64} height={64} className="rounded-full" />
+            <Image src={master.avatarUrl} alt={master.name} width={64} height={64} className="rounded-full object-cover" />
             <div>
               <p className="text-label text-gray-400 mb-1">Мастер игры</p>
               <p className="text-label-bold text-white">{master.name}</p>

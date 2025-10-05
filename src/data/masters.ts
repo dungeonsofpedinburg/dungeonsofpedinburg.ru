@@ -17,7 +17,7 @@ export const mastersDB: Record<string, Master> = {
   },
   'maksim-novikov': {
     name: 'Максим Новиков',
-    avatarUrl: '/images/icons/masters/maksim-novikov.png',
+    avatarUrl: '/images/icons/masters/maxim-novikov.png',
     description: 'Любитель научно-фантастических сеттингов и сложных правил. Идеальный выбор для тех, кто любит тактику.',
   },
   'oleg-ostanin': {
