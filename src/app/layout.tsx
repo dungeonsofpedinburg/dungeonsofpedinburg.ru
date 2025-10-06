@@ -1,3 +1,4 @@
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import localFont from "next/font/local";
 import "./globals.css";
 import { Header } from "./components/Header";
@@ -24,6 +25,7 @@ export default function RootLayout({
         <Header />
         <main className="pt-[7.8rem]">
           {children}
+          <SpeedInsights />
         </main>
         <div id="modal-root"></div>
       </body>
