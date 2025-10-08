@@ -22,7 +22,7 @@ export const mastersDB: Record<string, Master> = {
   },
   'oleg-ostanin': {
     name: 'Олег Останин',
-    avatarUrl: '/images/icons/masters/alexey-kakaulin.png',
+    avatarUrl: '/images/icons/masters/oleg-ostanin.jpg',
     description: 'Любитель научно-фантастических сеттингов и сложных правил. Идеальный выбор для тех, кто любит тактику.',
   },
   'dmitry-mordvinov': {

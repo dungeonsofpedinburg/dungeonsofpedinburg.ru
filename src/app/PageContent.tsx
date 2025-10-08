@@ -41,40 +41,40 @@ export default function PageContent() {
       <Container className="py-8">
         <div className="card-grid gap-x-[1.2rem] gap-y-[2.4rem] mt-[2rem]">
           <AdventureCard
+            adventureId="adventurers-ID"
+            masterId="oleg-ostanin"
+            dateTime="Без даты"
+            price="690₽"
+            location="Barbara Bus"
+            startLevel="1 уровень"
+            playerCount="От 4 до 5"
+            duration="От 3 до 5 часов"
+            telegramLobbyUrl="https://t.me/udostovirenie"
+            lobbyButtonText="Заглянуть в лобби"
+          />
+          <AdventureCard
+            adventureId="talent-devouring-golem"
+            masterId="ivan-komarik"
+            dateTime="Без даты>"
+            price="1000₽"
+            location="Barbara Bus"
+            startLevel="1 уровень"
+            playerCount="От 4 до 6"
+            duration="От 3 до 5 часов"
+            telegramLobbyUrl="https://t.me/gptgolematia"
+            lobbyButtonText="Заглянуть в лобби"
+          />
+          <AdventureCard
             adventureId="barbara-is-waiting"
             masterId="maksim-novikov"
             dateTime="Без даты"
-            price="690Р"
+            price="690₽"
             location="Barbara Bus"
             startLevel="1 уровень"
             playerCount="От 4 до 5"
             duration="От 3 до 5 часов"
             telegramLobbyUrl="https://t.me/Barbara_Zhdet_dnd_story"
           />
-          <AdventureCard
-            adventureId="talent-devouring-golem"
-            masterId="ivan-komarik"
-            dateTime="12 октября"
-            price="390Р"
-            location="ДНК-маркет"
-            startLevel="1 уровень"
-            playerCount="4 игрока"
-            duration="1,5 часа"
-            telegramLobbyUrl="https://forms.gle/xv24tc7xRixBW31M6"
-            lobbyButtonText="Заполнить форму"
-          />
-          <AdventureCard
-            adventureId="talent-devouring-golem"
-            masterId="alexey-kakaulin"
-            dateTime="12 октября"
-            price="390Р"
-            location="ДНК-маркет"
-            startLevel="1 уровень"
-            playerCount="4 игрока"
-            duration="1,5 часа"
-            telegramLobbyUrl="https://forms.gle/xv24tc7xRixBW31M6"
-            lobbyButtonText="Заполнить форму"
-          />  
         </div>
       </Container>
 
