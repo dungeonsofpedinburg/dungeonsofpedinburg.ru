@@ -55,7 +55,7 @@ export default function PageContent() {
           <AdventureCard
             adventureId="talent-devouring-golem"
             masterId="ivan-komarik"
-            dateTime="Без даты>"
+            dateTime="Без даты"
             price="1000₽"
             location="Barbara Bus"
             startLevel="1 уровень"
