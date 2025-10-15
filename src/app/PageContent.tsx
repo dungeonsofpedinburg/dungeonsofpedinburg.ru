@@ -1,7 +1,7 @@
 // src/app/PageContent.tsx
 'use client'; // <-- ВАЖНО: Помечаем этот компонент как клиентский
-
-import { useSearchParams } from 'next/navigation';
+import { useEffect } from 'react';
+import { useSearchParams, useRouter } from 'next/navigation';
 import { adventuresDB } from '@/data/adventures';
 import { mastersDB } from '@/data/masters';
 
@@ -10,7 +10,68 @@ import { AdventureCard } from './components/AdventureCard';
 import { Modal } from './components/Modal';
 import { AdventureModal } from './components/AdventureModal';
 
+const cardsData = [
+  {
+    adventureId: "pumpkin-savior",
+    masterId: "alexey-kakaulin",
+    dateTime: "18:00, 19 октября",
+    price: "890₽",
+    oldPrice: "990₽",
+    location: "Медный таз",
+    startLevel: "1 уровень",
+    playerCount: "От 3 до 6",
+    duration: "От 3 до 5 часов",
+    telegramLobbyUrl: "https://t.me/pumpkin_savior",
+    lobbyButtonText: "Зайти в лобби",
+    badge: { text: 'ХВАТАЙ МОНЕТЫ' },
+    highlight: {
+      title: 'Хватай монеты, получай мерч',
+      text: 'В ходе этого приключения игроки будут находить особые монеты, спрятанные в разных уголках игры. Найденные монеты, можно будет обменять на вдохновение или реальный мерч Подземелий Пединбурга у мастера после игры.',
+    },
+    isDisabled: false,
+  },
+  {
+    adventureId: "adventurers-ID",
+    masterId: "oleg-ostanin",
+    dateTime: "Без даты",
+    price: "690₽",
+    location: "Barbara Bus",
+    startLevel: "1 уровень",
+    playerCount: "От 4 до 5",
+    duration: "От 3 до 5 часов",
+    telegramLobbyUrl: "https://t.me/udostovirenie",
+    lobbyButtonText: "Заглянуть в лобби",
+    isDisabled: true,
+  },
+  {
+    adventureId: "talent-devouring-golem",
+    masterId: "ivan-komarik",
+    dateTime: "Без даты",
+    price: "1000₽",
+    location: "Barbara Bus",
+    startLevel: "1 уровень",
+    playerCount: "От 4 до 6",
+    duration: "От 3 до 5 часов",
+    telegramLobbyUrl: "https://t.me/gptgolematia",
+    lobbyButtonText: "Заглянуть в лобби",
+    isDisabled: true,
+  },
+  {
+    adventureId: "barbara-is-waiting",
+    masterId: "maksim-novikov",
+    dateTime: "Без даты",
+    price: "690₽",
+    location: "Barbara Bus",
+    startLevel: "1 уровень",
+    playerCount: "От 4 до 5",
+    duration: "От 3 до 5 часов",
+    telegramLobbyUrl: "https://t.me/Barbara_Zhdet_dnd_story",
+    isDisabled: true,
+  },
+];
+
 export default function PageContent() {
+  const router = useRouter();
   const searchParams = useSearchParams();
 
   const adventureId = searchParams.get('view');
@@ -21,8 +82,21 @@ export default function PageContent() {
   const startLevel = searchParams.get('startLevel');
   const playerCount = searchParams.get('playerCount');
   const duration = searchParams.get('duration');
+  const oldPrice = searchParams.get('oldPrice');
   const telegramLobbyUrl = searchParams.get('telegramLobbyUrl');
   const lobbyButtonText = searchParams.get('lobbyButtonText');
+  const highlightTitle = searchParams.get('highlightTitle');
+  const highlightText = searchParams.get('highlightText');
+
+  useEffect(() => {
+    if (adventureId) {
+      const selectedCard = cardsData.find(card => card.adventureId === adventureId);
+      if (selectedCard && selectedCard.isDisabled) {
+        // Next.js автоматически обработает этот роут и покажет страницу not-found.tsx
+        router.push('/not-found'); 
+      }
+    }
+  }, [adventureId, router]);
 
   const selectedAdventure = adventureId ? adventuresDB[adventureId] : null;
   const selectedMaster = masterId ? mastersDB[masterId] : null;
@@ -30,7 +104,21 @@ export default function PageContent() {
   const detailsGrid = [
     { label: 'Дата и время', value: dateTime },
     { label: 'Место проведения', value: location },
-    { label: 'Стоимость для игрока', value: price },
+    { 
+      label: 'Стоимость для игрока', 
+      value: oldPrice ? (
+        // Если есть старая цена, формируем JSX
+        <>
+          {price}
+          <span className="ml-2 line-through text-white/60">
+            {oldPrice}
+          </span>
+        </>
+      ) : (
+        // Иначе, просто передаем строку
+        price
+      )
+    },
     { label: 'Уровень на старте', value: startLevel },
     { label: 'Количество игроков', value: playerCount },
     { label: 'Продолжительность', value: duration },
@@ -40,41 +128,10 @@ export default function PageContent() {
     <>
       <Container className="py-8">
         <div className="card-grid gap-x-[1.2rem] gap-y-[2.4rem] mt-[2rem]">
-          <AdventureCard
-            adventureId="adventurers-ID"
-            masterId="oleg-ostanin"
-            dateTime="Без даты"
-            price="690₽"
-            location="Barbara Bus"
-            startLevel="1 уровень"
-            playerCount="От 4 до 5"
-            duration="От 3 до 5 часов"
-            telegramLobbyUrl="https://t.me/udostovirenie"
-            lobbyButtonText="Заглянуть в лобби"
-          />
-          <AdventureCard
-            adventureId="talent-devouring-golem"
-            masterId="ivan-komarik"
-            dateTime="Без даты"
-            price="1000₽"
-            location="Barbara Bus"
-            startLevel="1 уровень"
-            playerCount="От 4 до 6"
-            duration="От 3 до 5 часов"
-            telegramLobbyUrl="https://t.me/gptgolematia"
-            lobbyButtonText="Заглянуть в лобби"
-          />
-          <AdventureCard
-            adventureId="barbara-is-waiting"
-            masterId="maksim-novikov"
-            dateTime="Без даты"
-            price="690₽"
-            location="Barbara Bus"
-            startLevel="1 уровень"
-            playerCount="От 4 до 5"
-            duration="От 3 до 5 часов"
-            telegramLobbyUrl="https://t.me/Barbara_Zhdet_dnd_story"
-          />
+          {/* 5. Рендерим карточки из массива данных */}
+          {cardsData.map((card) => (
+            <AdventureCard key={card.adventureId} {...card} />
+          ))}
         </div>
       </Container>
 
@@ -86,6 +143,8 @@ export default function PageContent() {
             details={detailsGrid}
             lobbyUrl={telegramLobbyUrl}
             lobbyButtonText={lobbyButtonText || 'ЗАГЛЯНУТЬ В ЛОББИ'}
+            highlightTitle={highlightTitle}
+            highlightText={highlightText}
           />
         </Modal>
       )}

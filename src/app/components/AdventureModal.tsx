@@ -8,16 +8,19 @@ import { X } from 'lucide-react';
 
 import { Adventure } from '@/data/adventures';
 import { Master } from '@/data/masters';
+import { HighlightBlock } from '../components/HighlightBlock';
 
 interface AdventureModalProps {
   adventure: Adventure;
   master: Master;
-  details: { label: string; value: string | null }[];
+  details: { label: string; value: React.ReactNode | null }[];
   lobbyUrl: string;
   lobbyButtonText: string;
+  highlightTitle: string | null;
+  highlightText: string | null;
 }
 
-export const AdventureModal = ({ adventure, master, details, lobbyUrl, lobbyButtonText, }: AdventureModalProps) => {
+export const AdventureModal = ({adventure, master, details, lobbyUrl, lobbyButtonText, highlightTitle, highlightText}: AdventureModalProps) => {
   const router = useRouter();
 
   const onDismiss = () => {
@@ -72,6 +75,14 @@ export const AdventureModal = ({ adventure, master, details, lobbyUrl, lobbyButt
               </div>
             ))}
           </div>
+
+          {highlightTitle && highlightText && (
+            <div className="mb-[4.8rem]">
+              <HighlightBlock title={highlightTitle}>
+                {highlightText}
+              </HighlightBlock>
+            </div>
+          )}
 
           {/* Блок с мастером */}
           <div className="flex items-center gap-4">
