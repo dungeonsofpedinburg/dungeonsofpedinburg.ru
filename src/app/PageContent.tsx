@@ -43,18 +43,6 @@ const cardsData = [
     lobbyButtonText: "Заглянуть в лобби",
     isDisabled: true,
   },
-  {
-    adventureId: "barbara-is-waiting",
-    masterId: "maksim-novikov",
-    dateTime: "Без даты",
-    price: "690₽",
-    location: "Barbara Bus",
-    startLevel: "1 уровень",
-    playerCount: "От 4 до 5",
-    duration: "От 3 до 5 часов",
-    telegramLobbyUrl: "https://t.me/Barbara_Zhdet_dnd_story",
-    isDisabled: true,
-  },
 ];
 
 export default function PageContent() {
