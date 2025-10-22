@@ -12,6 +12,19 @@ import { AdventureModal } from './components/AdventureModal';
 
 const cardsData = [
   {
+    adventureId: "talent-devouring-golem",
+    masterId: "ivan-komarik",
+    dateTime: "11 октября",
+    price: "1000₽",
+    location: "Бар «Истерика»",
+    startLevel: "1 уровень",
+    playerCount: "От 4 до 6",
+    duration: "От 3 до 5 часов",
+    telegramLobbyUrl: "https://t.me/gptgolematia",
+    lobbyButtonText: "Заглянуть в лобби",
+    isDisabled: false,
+  },
+  {
     adventureId: "pumpkin-savior",
     masterId: "alexey-kakaulin",
     dateTime: "Без даты",
