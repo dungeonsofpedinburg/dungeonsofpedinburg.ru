@@ -44,7 +44,7 @@ const cardsData = [
     isDisabled: false,
   },
   {
-    adventureId: "adventurers-ID",
+    adventureId: "pumpkin-savior",
     masterId: "oleg-ostanin",
     dateTime: "Без даты",
     price: "690₽",
