@@ -12,6 +12,24 @@ import { AdventureModal } from './components/AdventureModal';
 
 const cardsData = [
   {
+    adventureId: "barbara-is-waiting",
+    masterId: "maksim-novikov",
+    dateTime: "2 ноября",
+    price: "990₽",
+    location: "Barbara Bus",
+    startLevel: "1 уровень",
+    playerCount: "От 3 до 4",
+    duration: "От 3 до 5 часов",
+    telegramLobbyUrl: "https://t.me/Barbara_Zhdet_dnd_story_1",
+    lobbyButtonText: "Зайти в лобби",
+    badge: { text: 'Бесплатное пиво' },
+    highlight: {
+      title: 'Бесплатное пиво на игре',
+      text: 'Настольно-ролевые игры еще никогда не были настолько притягательными. Всем игрокам, что соберутся на это приключение про Barbara Bus, сама Barbara Bus нальет приветственный стакан пива во время игры!',
+    },
+    isDisabled: false,
+  },
+  {
     adventureId: "primary-broth",
     masterId: "ivan-komarik",
     dateTime: "БЕЗ ДАТЫ",
@@ -49,7 +67,7 @@ const cardsData = [
     duration: "От 3 до 5 часов",
     telegramLobbyUrl: "https://t.me/pumpkin_savior",
     lobbyButtonText: "Зайти в лобби",
-    badge: { text: 'ХВАТАЙ МОНЕТЫ' },
+    badge: { text: 'Получи бесплатный мерч' },
     highlight: {
       title: 'Хватай монеты, получай мерч',
       text: 'В ходе этого приключения игроки будут находить особые монеты, спрятанные в разных уголках игры. Найденные монеты, можно будет обменять на вдохновение или реальный мерч Подземелий Пединбурга у мастера после игры.',
