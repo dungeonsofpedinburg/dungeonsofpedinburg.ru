@@ -12,6 +12,19 @@ import { AdventureModal } from './components/AdventureModal';
 
 const cardsData = [
   {
+    adventureId: "primary-broth",
+    masterId: "ivan-komarik",
+    dateTime: "БЕЗ ДАТЫ",
+    price: "1000₽",
+    location: "—",
+    startLevel: "1 уровень",
+    playerCount: "От 4 до 6",
+    duration: "От 3 до 5 часов",
+    telegramLobbyUrl: "https://t.me/pediburgborshch",
+    lobbyButtonText: "Зайти в лобби",
+    isDisabled: false,
+  },
+  {
     adventureId: "talent-devouring-golem",
     masterId: "ivan-komarik",
     dateTime: "11 ноября",
@@ -21,7 +34,7 @@ const cardsData = [
     playerCount: "От 4 до 6",
     duration: "От 3 до 5 часов",
     telegramLobbyUrl: "https://t.me/gptgolematia",
-    lobbyButtonText: "Заглянуть в лобби",
+    lobbyButtonText: "Зайти в лобби",
     isDisabled: false,
   },
   {
@@ -53,7 +66,7 @@ const cardsData = [
     playerCount: "От 4 до 5",
     duration: "От 3 до 5 часов",
     telegramLobbyUrl: "https://t.me/udostovirenie",
-    lobbyButtonText: "Заглянуть в лобби",
+    lobbyButtonText: "Зайти в лобби",
     isDisabled: true,
   },
 ];
