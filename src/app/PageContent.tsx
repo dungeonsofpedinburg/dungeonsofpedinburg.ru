@@ -45,7 +45,7 @@ const cardsData = [
   {
     adventureId: "talent-devouring-golem",
     masterId: "ivan-komarik",
-    dateTime: "11 ноября",
+    dateTime: "20:00, 11 ноября",
     price: "990₽",
     location: "Бар «Истерика»",
     startLevel: "1 уровень",
