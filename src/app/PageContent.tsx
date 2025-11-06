@@ -14,7 +14,7 @@ const cardsData = [
   {
     adventureId: "barbara-is-waiting",
     masterId: "alexey-kakaulin",
-    dateTime: "БЕЗ ДАТЫ",
+    dateTime: "18:00, 16 ноября",
     price: "690₽",
     oldPrice: "990₽",
     location: "Barbara Bus",
