@@ -12,20 +12,6 @@ import { AdventureModal } from './components/AdventureModal';
 
 const cardsData = [
   {
-    adventureId: "barbara-is-waiting",
-    masterId: "alexey-kakaulin",
-    dateTime: "18:00, 16 ноября",
-    price: "690₽",
-    oldPrice: "990₽",
-    location: "Barbara Bus",
-    startLevel: "1 уровень",
-    playerCount: "От 4 до 6",
-    duration: "От 4 до 5 часов",
-    telegramLobbyUrl: "https://t.me/Barbara_Zhdet_dnd_story",
-    lobbyButtonText: "Зайти в лобби",
-    isDisabled: false,
-  },
-  {
     adventureId: "primary-broth",
     masterId: "ivan-komarik",
     dateTime: "БЕЗ ДАТЫ",
