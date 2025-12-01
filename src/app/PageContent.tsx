@@ -22,7 +22,7 @@ const cardsData = [
     duration: "От 3 до 5 часов",
     telegramLobbyUrl: "https://t.me/pediburgborshch",
     lobbyButtonText: "Зайти в лобби",
-    isDisabled: false,
+    isDisabled: true,
   },
 ];
 
