@@ -55,7 +55,7 @@ export const adventuresDB: Record<string, Adventure> = {
 Герои, до этого ни разу не сталкивавшиеся с паранормальными событиями, должны будут с головой окунуться в дурдом, разворачивающийся в их городе, и в конце не потерять себя.`,
   },
   'mysterious-abduction': {
-    title: 'Дотянуться до звезд',
+    title: 'Таинственное похищение',
     imageUrl: '/images/common/adventure-covers/mysterious-abduction-cover.jpg',
     coverImageUrl: '/images/common/adventure-mini-covers/mysterious-abduction-mini-cover.jpg',
     description: `В тихом селе Типографское, окруженном густыми хвойными лесами и кристально чистым озером, находится таверна «Легенда Кузнеца». Обычно её воздух пропитан ароматами хвои и свежести воды, но сегодня он наполнен тревогой и страхом.

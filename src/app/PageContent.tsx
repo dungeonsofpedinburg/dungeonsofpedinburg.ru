@@ -26,7 +26,7 @@ const cardsData = [
   },
   {
     adventureId: "reach-for-the-stars",
-    masterId: "lexey-kakaulin",
+    masterId: "alexey-kakaulin",
     dateTime: "18:00, 15 декабря",
     price: "1699₽",
     location: "Кузница Легенд",
