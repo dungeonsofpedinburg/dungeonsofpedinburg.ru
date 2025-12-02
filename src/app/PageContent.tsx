@@ -37,19 +37,6 @@ const cardsData = [
     lobbyButtonText: "Зайти в лобби",
     isDisabled: false,
   },
-  {
-    adventureId: "primary-broth",
-    masterId: "ivan-komarik",
-    dateTime: "БЕЗ ДАТЫ",
-    price: "990₽",
-    location: "—",
-    startLevel: "1 уровень",
-    playerCount: "От 4 до 6",
-    duration: "От 3 до 5 часов",
-    telegramLobbyUrl: "https://t.me/pediburgborshch",
-    lobbyButtonText: "Зайти в лобби",
-    isDisabled: true,
-  },
 ];
 
 export default function PageContent() {
