@@ -12,6 +12,32 @@ import { AdventureModal } from './components/AdventureModal';
 
 const cardsData = [
   {
+    adventureId: "mysterious-abduction",
+    masterId: "ivan-komarik",
+    dateTime: "18:00, 6 декабря",
+    price: "1699₽",
+    location: "Кузница Легенд",
+    startLevel: "1 уровень",
+    playerCount: "От 4 до 6",
+    duration: "От 4 до 5 часов",
+    telegramLobbyUrl: "https://t.me/tainapokritayachemto",
+    lobbyButtonText: "Зайти в лобби",
+    isDisabled: false,
+  },
+  {
+    adventureId: "reach-for-the-stars",
+    masterId: "lexey-kakaulin",
+    dateTime: "18:00, 15 декабря",
+    price: "1699₽",
+    location: "Кузница Легенд",
+    startLevel: "1 уровень",
+    playerCount: "От 4 до 6",
+    duration: "От 4 до 5 часов",
+    telegramLobbyUrl: "https://t.me/reach_for_the_stars_dnd",
+    lobbyButtonText: "Зайти в лобби",
+    isDisabled: false,
+  },
+  {
     adventureId: "primary-broth",
     masterId: "ivan-komarik",
     dateTime: "БЕЗ ДАТЫ",
