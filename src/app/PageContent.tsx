@@ -12,15 +12,15 @@ import { AdventureModal } from './components/AdventureModal';
 
 const cardsData = [
   {
-    adventureId: "mysterious-abduction",
-    masterId: "ivan-komarik",
-    dateTime: "18:00, 6 декабря",
-    price: "1699₽",
-    location: "Кузница Легенд",
+    adventureId: "the-cursed-bond",
+    masterId: "roman-saltovsky",
+    dateTime: "БЕЗ ДАТЫ",
+    price: "750₽",
+    location: "—",
     startLevel: "1 уровень",
-    playerCount: "От 4 до 6",
+    playerCount: "3 игрока",
     duration: "От 4 до 5 часов",
-    telegramLobbyUrl: "https://t.me/tainapokritayachemto",
+    telegramLobbyUrl: "https://t.me/+5GlZI6IZFQRiNDg6",
     lobbyButtonText: "Зайти в лобби",
     isDisabled: false,
   },
@@ -36,6 +36,19 @@ const cardsData = [
     telegramLobbyUrl: "https://t.me/reach_for_the_stars_dnd",
     lobbyButtonText: "Зайти в лобби",
     isDisabled: false,
+  },
+    {
+    adventureId: "mysterious-abduction",
+    masterId: "ivan-komarik",
+    dateTime: "18:00, 6 декабря",
+    price: "1699₽",
+    location: "Кузница Легенд",
+    startLevel: "1 уровень",
+    playerCount: "От 4 до 6",
+    duration: "От 4 до 5 часов",
+    telegramLobbyUrl: "https://t.me/tainapokritayachemto",
+    lobbyButtonText: "Зайти в лобби",
+    isDisabled: true,
   },
 ];
 
