@@ -32,7 +32,7 @@ export const mastersDB: Record<string, Master> = {
   },
   'roman-saltovsky': {
     name: 'Роман Салтовский',
-    avatarUrl: '/images/icons/masters/roman-saltovsky.png',
+    avatarUrl: '/images/icons/masters/roman-saltovsky.jpg',
     description: '—',
   },
 };
