@@ -37,19 +37,6 @@ const cardsData = [
     lobbyButtonText: "Зайти в лобби",
     isDisabled: false,
   },
-    {
-    adventureId: "mysterious-abduction",
-    masterId: "ivan-komarik",
-    dateTime: "18:00, 6 декабря",
-    price: "1699₽",
-    location: "Кузница Легенд",
-    startLevel: "1 уровень",
-    playerCount: "От 4 до 6",
-    duration: "От 4 до 5 часов",
-    telegramLobbyUrl: "https://t.me/tainapokritayachemto",
-    lobbyButtonText: "Зайти в лобби",
-    isDisabled: true,
-  },
 ];
 
 export default function PageContent() {
