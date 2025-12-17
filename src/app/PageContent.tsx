@@ -27,7 +27,7 @@ const cardsData = [
   {
     adventureId: "shit-with-smoke",
     masterId: "ivan-komarik",
-    dateTime: "—",
+    dateTime: "БЕЗ ДАТЫ",
     price: "990₽",
     location: "—",
     startLevel: "1 уровень",
