@@ -12,19 +12,6 @@ import { AdventureModal } from './components/AdventureModal';
 
 const cardsData = [
   {
-    adventureId: "the-cursed-bond",
-    masterId: "roman-saltovsky",
-    dateTime: "БЕЗ ДАТЫ",
-    price: "750₽",
-    location: "—",
-    startLevel: "1 уровень",
-    playerCount: "3 игрока",
-    duration: "От 4 до 5 часов",
-    telegramLobbyUrl: "https://t.me/+5GlZI6IZFQRiNDg6",
-    lobbyButtonText: "Зайти в лобби",
-    isDisabled: false,
-  },
-  {
     adventureId: "shit-with-smoke",
     masterId: "alexey-kakaulin",
     dateTime: "28 декабря, 18:00",
@@ -37,6 +24,33 @@ const cardsData = [
     lobbyButtonText: "Зайти в лобби",
     isDisabled: false,
   },
+  {
+    adventureId: "shit-with-smoke",
+    masterId: "ivan-komarik",
+    dateTime: "—",
+    price: "990₽",
+    location: "—",
+    startLevel: "1 уровень",
+    playerCount: "От 4 до 6 игроков",
+    duration: "От 4 до 5 часов",
+    telegramLobbyUrl: "https://t.me/doubleshitwithdim",
+    lobbyButtonText: "Зайти в лобби",
+    isDisabled: false,
+  },
+  {
+    adventureId: "the-cursed-bond",
+    masterId: "roman-saltovsky",
+    dateTime: "БЕЗ ДАТЫ",
+    price: "750₽",
+    location: "—",
+    startLevel: "1 уровень",
+    playerCount: "3 игрока",
+    duration: "От 4 до 5 часов",
+    telegramLobbyUrl: "https://t.me/+5GlZI6IZFQRiNDg6",
+    lobbyButtonText: "Зайти в лобби",
+    isDisabled: false,
+  },
+  
 ];
 
 export default function PageContent() {
