@@ -13,19 +13,6 @@ import { AdventureModal } from './components/AdventureModal';
 const cardsData = [
   {
     adventureId: "shit-with-smoke",
-    masterId: "alexey-kakaulin",
-    dateTime: "28 декабря, 18:00",
-    price: "990₽",
-    location: "—",
-    startLevel: "1 уровень",
-    playerCount: "От 4 до 6 игроков",
-    duration: "От 4 до 5 часов",
-    telegramLobbyUrl: "https://t.me/shit_with_smoke_DOP",
-    lobbyButtonText: "Зайти в лобби",
-    isDisabled: false,
-  },
-  {
-    adventureId: "shit-with-smoke",
     masterId: "ivan-komarik",
     dateTime: "28 декабря",
     price: "990₽",
