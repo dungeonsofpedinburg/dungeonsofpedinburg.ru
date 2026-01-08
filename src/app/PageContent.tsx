@@ -24,20 +24,6 @@ const cardsData = [
     lobbyButtonText: "Зайти в лобби",
     isDisabled: false,
   },
-   {
-    adventureId: "barbara-is-waiting",
-    masterId: "ivan-komarik",
-    dateTime: "5 января",
-    price: "990₽",
-    location: "—",
-    startLevel: "1 уровень",
-    playerCount: "От 4 до 6 игроков",
-    duration: "От 4 до 5 часов",
-    telegramLobbyUrl: "https://t.me/barbarazdet",
-    lobbyButtonText: "Зайти в лобби",
-    isDisabled: false,
-  },
-  
 ];
 
 export default function PageContent() {
