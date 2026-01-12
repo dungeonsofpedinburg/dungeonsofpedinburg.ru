@@ -12,7 +12,7 @@ import { AdventureModal } from './components/AdventureModal';
 
 const cardsData = [
   {
-    adventureId: "the-cursed-bond",
+    adventureId: "telega",
     masterId: "ivan-komarik",
     dateTime: "БЕЗ ДАТЫ",
     price: "1000₽",
