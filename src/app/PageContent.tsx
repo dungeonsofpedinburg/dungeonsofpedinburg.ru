@@ -13,6 +13,19 @@ import { AdventureModal } from './components/AdventureModal';
 const cardsData = [
   {
     adventureId: "the-cursed-bond",
+    masterId: "ivan-komarik",
+    dateTime: "БЕЗ ДАТЫ",
+    price: "1000₽",
+    location: "Barbara Bus",
+    startLevel: "1 уровень",
+    playerCount: "4 игрока",
+    duration: "От 4 до 5 часов",
+    telegramLobbyUrl: "https://t.me/telegadnd",
+    lobbyButtonText: "Зайти в лобби",
+    isDisabled: false,
+  },
+  {
+    adventureId: "the-cursed-bond",
     masterId: "roman-saltovsky",
     dateTime: "БЕЗ ДАТЫ",
     price: "750₽",
