@@ -26,7 +26,7 @@ const cardsData = [
   },
   {
     adventureId: "barbara-is-waiting",
-    masterId: "maxim-novikov",
+    masterId: "maksim-novikov",
     dateTime: "БЕЗ ДАТЫ",
     price: "1000₽",
     location: "—",
