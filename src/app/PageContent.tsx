@@ -12,19 +12,6 @@ import { AdventureModal } from './components/AdventureModal';
 
 const cardsData = [
   {
-    adventureId: "12-desperate-princesses",
-    masterId: "alexey-kakaulin",
-    dateTime: "БЕЗ ДАТЫ",
-    price: "1000₽",
-    location: "—",
-    startLevel: "1 уровень",
-    playerCount: "От 4 до 6 игроков",
-    duration: "От 4 до 5 часов",
-    telegramLobbyUrl: "https://t.me/desperate_princesses",
-    lobbyButtonText: "Зайти в лобби",
-    isDisabled: false,
-  },
-  {
     adventureId: "barbara-is-waiting",
     masterId: "maksim-novikov",
     dateTime: "БЕЗ ДАТЫ",
