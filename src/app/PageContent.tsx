@@ -76,19 +76,6 @@ const cardsData = [
     lobbyButtonText: "Зайти в лобби",
     isDisabled: false,
   },
-  {
-    adventureId: "the-cursed-bond",
-    masterId: "roman-saltovsky",
-    dateTime: "БЕЗ ДАТЫ",
-    price: "1000₽",
-    location: "—",
-    startLevel: "1 уровень",
-    playerCount: "3 игрока",
-    duration: "От 4 до 5 часов",
-    telegramLobbyUrl: "https://t.me/cursed_bonds2",
-    lobbyButtonText: "Зайти в лобби",
-    isDisabled: false,
-  },
 ];
 
 export default function PageContent() {
