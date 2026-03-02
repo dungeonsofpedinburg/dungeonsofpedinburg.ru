@@ -12,19 +12,6 @@ import { AdventureModal } from './components/AdventureModal';
 
 const cardsData = [
   {
-    adventureId: "delusional-robbery",
-    masterId: "alexey-kakaulin",
-    dateTime: "18:00, 3 марта",
-    price: "1000₽",
-    location: "Drink&RE",
-    startLevel: "1 уровень",
-    playerCount: "От 3 до 6 игроков",
-    duration: "От 3 до 5 часов",
-    telegramLobbyUrl: "https://t.me/heist_drink_re",
-    lobbyButtonText: "Зайти в лобби",
-    isDisabled: false,
-  },
-  {
     adventureId: "signal-sos",
     masterId: "ivan-komarik",
     dateTime: "18:00, 3 марта",
