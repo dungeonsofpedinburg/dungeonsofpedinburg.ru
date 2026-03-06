@@ -12,9 +12,9 @@ import { AdventureModal } from './components/AdventureModal';
 
 const cardsData = [
   {
-    adventureId: "signal-sos",
+    adventureId: "mysterious-abduction",
     masterId: "ivan-komarik",
-    dateTime: "18:00, 3 марта",
+    dateTime: "18:00, 10 марта",
     price: "1000₽",
     location: "Melomel",
     startLevel: "1 уровень",
@@ -25,31 +25,18 @@ const cardsData = [
     isDisabled: false,
   },
   {
-    adventureId: "between-the-hammer-and-the-axe",
-    masterId: "roman-saltovsky",
-    dateTime: "18:00, 4 марта",
+    adventureId: "delusional-robbery",
+    masterId: "alexey-kakaulin",
+    dateTime: "18:00, 10 марта",
     price: "1000₽",
-    location: "Barbara Bus",
+    location: "Drink&RE",
     startLevel: "1 уровень",
     playerCount: "От 4 до 6 игроков",
-    duration: "От 4 до 5 часов",
-    telegramLobbyUrl: "https://t.me/between_a_hammer_and_an_axe",
+    duration: "От 3 до 5 часов",
+    telegramLobbyUrl: "https://t.me/drink_re_dnd",
     lobbyButtonText: "Зайти в лобби",
     isDisabled: false,
-  },
-  {
-    adventureId: "night-guards-of-the-forge",
-    masterId: "oleg-ostanin",
-    dateTime: "БЕЗ ДАТЫ",
-    price: "1000₽",
-    location: "—",
-    startLevel: "1 уровень",
-    playerCount: "От 4 до 6 игроков",
-    duration: "От 4 до 5 часов",
-    telegramLobbyUrl: "https://t.me/chekalsec",
-    lobbyButtonText: "Зайти в лобби",
-    isDisabled: false,
-  },
+  }
 ];
 
 export default function PageContent() {
