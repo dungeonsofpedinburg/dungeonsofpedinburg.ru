@@ -36,32 +36,6 @@ const cardsData = [
     telegramLobbyUrl: "https://t.me/dnd_melomel",
     lobbyButtonText: "Зайти в лобби",
     isDisabled: false,
-  },
-  {
-    adventureId: "mysterious-abduction",
-    masterId: "ivan-komarik",
-    dateTime: "18:00, 10 марта",
-    price: "1000₽",
-    location: "Melomel",
-    startLevel: "1 уровень",
-    playerCount: "От 4 до 6 игроков",
-    duration: "От 3 до 5 часов",
-    telegramLobbyUrl: "https://t.me/dnd_melomel",
-    lobbyButtonText: "Зайти в лобби",
-    isDisabled: false,
-  },
-  {
-    adventureId: "delusional-robbery",
-    masterId: "alexey-kakaulin",
-    dateTime: "18:00, 10 марта",
-    price: "1000₽",
-    location: "Drink&RE",
-    startLevel: "1 уровень",
-    playerCount: "От 4 до 6 игроков",
-    duration: "От 3 до 5 часов",
-    telegramLobbyUrl: "https://t.me/drink_re_dnd",
-    lobbyButtonText: "Зайти в лобби",
-    isDisabled: false,
   }
 ];
 
