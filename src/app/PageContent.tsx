@@ -12,11 +12,11 @@ import { AdventureModal } from './components/AdventureModal';
 
 const cardsData = [
   {
-    adventureId: "the-prisoner-13",
+    adventureId: "hellish-weeding",
     masterId: "alexey-kakaulin",
-    dateTime: "18:00, 17 марта",
-    price: "1000₽",
-    location: "Drink&RE",
+    dateTime: "8 апреля",
+    price: "990₽",
+    location: "NUDE",
     startLevel: "1 уровень",
     playerCount: "От 4 до 6 игроков",
     duration: "От 3 до 5 часов",
@@ -25,18 +25,18 @@ const cardsData = [
     isDisabled: false,
   },
   {
-    adventureId: "daring-escape",
-    masterId: "ivan-komarik",
-    dateTime: "18:00, 17 марта",
-    price: "1000₽",
-    location: "Melomel",
+    adventureId: "hellish-weeding",
+    masterId: "alexey-kakaulin",
+    dateTime: "12 апреля",
+    price: "990₽",
+    location: "Barbara Bus",
     startLevel: "1 уровень",
     playerCount: "От 4 до 6 игроков",
     duration: "От 3 до 5 часов",
-    telegramLobbyUrl: "https://t.me/dnd_melomel",
+    telegramLobbyUrl: "https://t.me/hellish_weeding",
     lobbyButtonText: "Зайти в лобби",
     isDisabled: false,
-  }
+  },
 ];
 
 export default function PageContent() {
