@@ -12,6 +12,19 @@ import { AdventureModal } from './components/AdventureModal';
 
 const cardsData = [
   {
+    adventureId: "mysterious-abduction",
+    masterId: "ivan-komarik",
+    dateTime: "7 апреля",
+    price: "990₽",
+    location: "Melomel",
+    startLevel: "1 уровень",
+    playerCount: "От 4 до 6 игроков",
+    duration: "От 3 до 5 часов",
+    telegramLobbyUrl: "https://t.me/dnd_melomel",
+    lobbyButtonText: "Зайти в лобби",
+    isDisabled: false,
+  },
+  {
     adventureId: "hellish-weeding",
     masterId: "alexey-kakaulin",
     dateTime: "8 апреля",
@@ -19,7 +32,7 @@ const cardsData = [
     location: "NUDE",
     startLevel: "1 уровень",
     playerCount: "От 4 до 6 игроков",
-    duration: "От 3 до 5 часов",
+    duration: "От 4 до 5 часов",
     telegramLobbyUrl: "https://t.me/drink_re_dnd",
     lobbyButtonText: "Зайти в лобби",
     isDisabled: false,
@@ -32,7 +45,7 @@ const cardsData = [
     location: "Barbara Bus",
     startLevel: "1 уровень",
     playerCount: "От 4 до 6 игроков",
-    duration: "От 3 до 5 часов",
+    duration: "От 4 до 5 часов",
     telegramLobbyUrl: "https://t.me/hellish_weeding",
     lobbyButtonText: "Зайти в лобби",
     isDisabled: false,
