@@ -14,19 +14,6 @@ const cardsData = [
   {
     adventureId: "hellish-weeding",
     masterId: "alexey-kakaulin",
-    dateTime: "18:00, 15 апреля",
-    price: "990₽",
-    location: "NUDE",
-    startLevel: "1 уровень",
-    playerCount: "От 4 до 6 игроков",
-    duration: "От 4 до 5 часов",
-    telegramLobbyUrl: "https://t.me/drink_re_dnd",
-    lobbyButtonText: "Зайти в лобби",
-    isDisabled: false,
-  },
-  {
-    adventureId: "hellish-weeding",
-    masterId: "alexey-kakaulin",
     dateTime: "17:00, 19 апреля",
     price: "990₽",
     location: "Barbara Bus",
@@ -37,6 +24,19 @@ const cardsData = [
     lobbyButtonText: "Зайти в лобби",
     isDisabled: false,
   },
+  {
+    adventureId: "between-the-hammer-and-the-axe",
+    masterId: "roman-saltovsky",
+    dateTime: "Без даты",
+    price: "990₽",
+    location: "—",
+    startLevel: "1 уровень",
+    playerCount: "От 4 до 6 игроков",
+    duration: "От 4 до 5 часов",
+    telegramLobbyUrl: "https://t.me/between_a_hammer_and_an_axe",
+    lobbyButtonText: "Зайти в лобби",
+    isDisabled: false,
+  }
 ];
 
 export default function PageContent() {
