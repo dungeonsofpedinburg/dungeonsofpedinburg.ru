@@ -14,7 +14,7 @@ const cardsData = [
   {
     adventureId: "hellish-weeding",
     masterId: "alexey-kakaulin",
-    dateTime: "17:00, 19 апреля",
+    dateTime: "Без даты",
     price: "990₽",
     location: "Barbara Bus",
     startLevel: "1 уровень",
