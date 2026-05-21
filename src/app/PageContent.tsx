@@ -12,20 +12,7 @@ import { AdventureModal } from './components/AdventureModal';
 
 const cardsData = [
   {
-    adventureId: "hellish-weeding",
-    masterId: "alexey-kakaulin",
-    dateTime: "Без даты",
-    price: "990₽",
-    location: "Barbara Bus",
-    startLevel: "1 уровень",
-    playerCount: "От 4 до 6 игроков",
-    duration: "От 4 до 5 часов",
-    telegramLobbyUrl: "https://t.me/hellish_weeding",
-    lobbyButtonText: "Зайти в лобби",
-    isDisabled: false,
-  },
-  {
-    adventureId: "between-the-hammer-and-the-axe",
+    adventureId: "zaeltsovsky-grin",
     masterId: "roman-saltovsky",
     dateTime: "Без даты",
     price: "990₽",
@@ -33,10 +20,36 @@ const cardsData = [
     startLevel: "1 уровень",
     playerCount: "От 4 до 6 игроков",
     duration: "От 4 до 5 часов",
-    telegramLobbyUrl: "https://t.me/between_a_hammer_and_an_axe",
+    telegramLobbyUrl: "https://t.me/Zaeltsovs_grin",
     lobbyButtonText: "Зайти в лобби",
     isDisabled: false,
-  }
+  },
+  {
+    adventureId: "special-hunting",
+    masterId: "alexey-kakaulin",
+    dateTime: "12:45, 7 июня",
+    price: "390₽",
+    location: "ДНК-маркет",
+    startLevel: "1 уровень",
+    playerCount: "4 игрока",
+    duration: "1,5 часа",
+    telegramLobbyUrl: "https://forms.gle/i7LfmSD9SYpb9Q2U6",
+    lobbyButtonText: "Записаться на игру",
+    isDisabled: false,
+  },
+  {
+    adventureId: "special-hunting",
+    masterId: "ivan-komarik",
+    dateTime: "12:45, 7 июня",
+    price: "390₽",
+    location: "ДНК-маркет",
+    startLevel: "1 уровень",
+    playerCount: "4 игрока",
+    duration: "1,5 часа",
+    telegramLobbyUrl: "https://forms.gle/i7LfmSD9SYpb9Q2U6",
+    lobbyButtonText: "Записаться на игру",
+    isDisabled: false,
+  },
 ];
 
 export default function PageContent() {
