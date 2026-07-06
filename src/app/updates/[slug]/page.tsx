@@ -1,8 +1,15 @@
 // src/app/updates/[slug]/page.tsx
 
 import Image from 'next/image';
-import { Container } from 'src/app/components/Container';
+import { Container } from '@/app/components/Container';
 import Link from 'next/link';
+import { updatesDB } from '@/data/updates';
+
+export function generateStaticParams() {
+  return updatesDB.map((update) => ({
+    slug: update.slug,
+  }));
+}
 
 export default function UpdateDetailPage({ params }: { params: { slug: string } }) {
   return (

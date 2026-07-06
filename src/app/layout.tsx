@@ -1,4 +1,3 @@
-import { SpeedInsights } from "@vercel/speed-insights/next"
 import YandexMetrika from "./components/YandexMetrika";
 
 import localFont from "next/font/local";
@@ -28,7 +27,6 @@ export default function RootLayout({
         <main className="pt-[7.8rem]">
           {children}
           <YandexMetrika />
-          <SpeedInsights />
         </main>
         <div id="modal-root"></div>
       </body>
