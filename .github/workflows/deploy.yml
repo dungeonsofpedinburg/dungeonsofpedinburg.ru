@@ -20,6 +20,10 @@ concurrency:
 
 jobs:
   build-and-deploy:
+    # Добавляем обязательное указание окружения для GitHub Pages
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -28,7 +32,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22 # Обновили до стабильной 22-й версии
           cache: npm
 
       - name: Install dependencies
@@ -43,4 +47,5 @@ jobs:
           path: ./out
 
       - name: Deploy to GitHub Pages
+        id: deployment # Указываем ID, чтобы связать с URL выше
         uses: actions/deploy-pages@v4
