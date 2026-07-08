@@ -1,4 +1,5 @@
 import YandexMetrika from "./components/YandexMetrika";
+import { Toaster } from "@/components/ui/sonner";
 
 import localFont from "next/font/local";
 import "./globals.css";
@@ -28,6 +29,7 @@ export default function RootLayout({
           {children}
           <YandexMetrika />
         </main>
+        <Toaster />
         <div id="modal-root"></div>
       </body>
     </html>

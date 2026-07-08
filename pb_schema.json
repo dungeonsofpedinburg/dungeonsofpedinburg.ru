@@ -1,0 +1,69 @@
+[
+  {
+    "name": "users",
+    "type": "auth",
+    "system": true,
+    "schema": [
+      {
+        "id": "users_role",
+        "name": "role",
+        "type": "select",
+        "system": false,
+        "required": true,
+        "unique": false,
+        "options": {
+          "maxSelect": 1,
+          "values": ["player", "master"]
+        }
+      }
+    ]
+  },
+  {
+    "name": "coupons",
+    "type": "base",
+    "system": false,
+    "schema": [
+      {
+        "id": "coupons_code",
+        "name": "code",
+        "type": "text",
+        "system": false,
+        "required": true,
+        "unique": true,
+        "options": {
+          "min": null,
+          "max": null,
+          "pattern": ""
+        }
+      },
+      {
+        "id": "coupons_active",
+        "name": "active",
+        "type": "bool",
+        "system": false,
+        "required": false,
+        "unique": false,
+        "options": {}
+      },
+      {
+        "id": "coupons_usedBy",
+        "name": "usedBy",
+        "type": "relation",
+        "system": false,
+        "required": false,
+        "unique": true,
+        "options": {
+          "collectionId": "_pb_users_auth_",
+          "cascadeDelete": false,
+          "minSelect": null,
+          "maxSelect": 1
+        }
+      }
+    ],
+    "listRule": "",
+    "viewRule": "",
+    "createRule": "",
+    "updateRule": "",
+    "deleteRule": ""
+  }
+]
